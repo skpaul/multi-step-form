@@ -1,5 +1,5 @@
 ﻿/*
-SwiftChanger
+multiStepForm
 
 Description:
 This plugin enables to switch between differen formSections within a form.
@@ -10,9 +10,9 @@ Using this plugin, you can split a large form into smaller section using .formSe
 
 
 (function ($) {
-    $.fn.swiftChanger = function(validationRules) {
-        // this.find(prevButtonClassName).bind("click.swiftChanger",function(event){
-        $(".goToPrevSection").bind("click.swiftChanger",function(event){
+    $.fn.multiStepForm = function(validationRules) {
+        // this.find(prevButtonClassName).bind("click.multiStepForm",function(event){
+        $(".goToPrevSection").bind("click.multiStepForm",function(event){
             event.preventDefault();
             var section = $(this.closest('.formSection'));
             section.css("display", "none");
@@ -42,7 +42,7 @@ Using this plugin, you can split a large form into smaller section using .formSe
         }
         
       
-        $(".goToNextSection").bind("click.swiftChanger",function(event){
+        $(".goToNextSection").bind("click.multiStepForm",function(event){
             event.preventDefault();
             var section = $(this.closest('.formSection'));
            
